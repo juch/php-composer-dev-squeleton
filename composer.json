@@ -1,0 +1,40 @@
+{
+    "name": "juch/php-dev-skeleton",
+    "description": "Skeleton for new php project",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "bin-dir": "bin/",
+        "discard-changes": true
+    },
+    "repositories": [],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "codeception/c3": "~2.0",
+        "codeception/codeception": "~2.0",
+        "codeception/mockery-module": "~0.2.0",
+        "phpspec/phpspec": "~2.0",
+        "mockery/mockery" : "~0.9.3",
+        "phpunit/phpunit": "~4.2",
+        "mikey179/vfsStream": "~1.4",
+        "lstrojny/phpunit-function-mocker": "~0.2.0",
+        "squizlabs/php_codesniffer": "~2.2.0"
+    },
+    "suggest": {
+        "ext-xdebug": ">=2.2.1"
+    },
+    "autoload": {
+        "files": [],
+        "psr-0": {
+            "": "src"
+        },
+        "psr-4": {}
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "bash ./contrib/setup.sh"
+        ]
+    }
+}
